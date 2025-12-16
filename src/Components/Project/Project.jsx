@@ -1,7 +1,101 @@
 
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 const Project = () => {
+    const sliderRef1 = useRef(null);
+    const sliderRef2 = useRef(null);
+    const swiperInstance1 = useRef(null);
+    const swiperInstance2 = useRef(null);
+
+    useEffect(() => {
+        let intervalId = null;
+
+        const initSliders = () => {
+            if (!sliderRef1.current || !sliderRef2.current) return;
+            // Prevent double init
+            if (swiperInstance1.current || swiperInstance2.current) return;
+
+            if (window.Swiper) {
+                try {
+                    // Common config used in script.js for .project-slider
+                    const config = {
+                        loop: true,
+                        autoplay: {
+                            delay: 6000,
+                            disableOnInteraction: false,
+                        },
+                        spaceBetween: 24,
+                        centeredSlides: true,
+                        speed: 1500, // Matching others
+                        observer: true,
+                        observeParents: true,
+                        breakpoints: {
+                            0: { slidesPerView: 1 },
+                            475: { slidesPerView: 1 },
+                            767: { slidesPerView: 1.5 },
+                            992: { slidesPerView: 1.8 },
+                            1199: { slidesPerView: 2 },
+                            1299: { slidesPerView: 2.5 },
+                            1399: { slidesPerView: 3 },
+                            1499: { slidesPerView: 3.5 },
+                        },
+                    };
+
+                    // Initialize first slider
+                    swiperInstance1.current = new window.Swiper(sliderRef1.current, config);
+
+                    // Initialize second slider (RTL)
+                    swiperInstance2.current = new window.Swiper(sliderRef2.current, config);
+
+                    // Handle generic resize restart logic from script.js
+                    window.addEventListener("resize", () => {
+                        if (swiperInstance1.current && swiperInstance1.current.autoplay) {
+                            swiperInstance1.current.autoplay.start();
+                        }
+                        if (swiperInstance2.current && swiperInstance2.current.autoplay) {
+                            swiperInstance2.current.autoplay.start();
+                        }
+                    });
+
+                } catch (error) {
+                    console.error("Project Swiper init error:", error);
+                }
+            }
+        };
+
+        const checkDependencies = () => {
+            let attempt = 0;
+            const maxAttempts = 50;
+            if (window.Swiper) {
+                initSliders();
+                return;
+            }
+            intervalId = setInterval(() => {
+                attempt++;
+                if (window.Swiper) {
+                    clearInterval(intervalId);
+                    initSliders();
+                } else if (attempt >= maxAttempts) {
+                    clearInterval(intervalId);
+                }
+            }, 100);
+        };
+
+        checkDependencies();
+
+        return () => {
+            if (intervalId) clearInterval(intervalId);
+            if (swiperInstance1.current) {
+                swiperInstance1.current.destroy();
+                swiperInstance1.current = null;
+            }
+            if (swiperInstance2.current) {
+                swiperInstance2.current.destroy();
+                swiperInstance2.current = null;
+            }
+        };
+    }, []);
+
     return (
         <section className="project-one">
             <div className="auto-container">
@@ -12,7 +106,7 @@ const Project = () => {
                 </div>
 
                 <div className="case-one__slider-inner">
-                    <div className="swiper project-slider">
+                    <div className="swiper project-slider" ref={sliderRef1}>
                         <div className="swiper-wrapper">
 
                             <div className="swiper-slide">
@@ -25,7 +119,7 @@ const Project = () => {
                                         <a href="project-detail.html" className="icon"><i className="flaticon-arrow-up"></i></a>
                                     </div>
                                     <div className="image">
-                                        <img src="assets/images/gallery/4.jpg" alt="" />
+                                        <img src="assets/images/gallery/4.jpg" alt="" loading="lazy" />
                                     </div>
                                 </div>
                             </div>
@@ -40,7 +134,7 @@ const Project = () => {
                                         <a href="project-detail.html" className="icon"><i className="flaticon-arrow-up"></i></a>
                                     </div>
                                     <div className="image">
-                                        <img src="assets/images/gallery/5.jpg" alt="" />
+                                        <img src="assets/images/gallery/5.jpg" alt="" loading="lazy" />
                                     </div>
                                 </div>
                             </div>
@@ -55,7 +149,7 @@ const Project = () => {
                                         <a href="project-detail.html" className="icon"><i className="flaticon-arrow-up"></i></a>
                                     </div>
                                     <div className="image">
-                                        <img src="assets/images/gallery/6.jpg" alt="" />
+                                        <img src="assets/images/gallery/6.jpg" alt="" loading="lazy" />
                                     </div>
                                 </div>
                             </div>
@@ -70,7 +164,7 @@ const Project = () => {
                                         <a href="project-detail.html" className="icon"><i className="flaticon-arrow-up"></i></a>
                                     </div>
                                     <div className="image">
-                                        <img src="assets/images/gallery/7.jpg" alt="" />
+                                        <img src="assets/images/gallery/7.jpg" alt="" loading="lazy" />
                                     </div>
                                 </div>
                             </div>
@@ -78,7 +172,7 @@ const Project = () => {
                         </div>
                     </div>
 
-                    <div className="swiper project-slider" dir="rtl">
+                    <div className="swiper project-slider" dir="rtl" ref={sliderRef2}>
                         <div className="swiper-wrapper">
 
                             <div className="swiper-slide">
@@ -91,7 +185,7 @@ const Project = () => {
                                         <a href="project-detail.html" className="icon"><i className="flaticon-arrow-up"></i></a>
                                     </div>
                                     <div className="image">
-                                        <img src="assets/images/gallery/7.jpg" alt="" />
+                                        <img src="assets/images/gallery/7.jpg" alt="" loading="lazy" />
                                     </div>
                                 </div>
                             </div>
@@ -106,7 +200,7 @@ const Project = () => {
                                         <a href="project-detail.html" className="icon"><i className="flaticon-arrow-up"></i></a>
                                     </div>
                                     <div className="image">
-                                        <img src="assets/images/gallery/6.jpg" alt="" />
+                                        <img src="assets/images/gallery/6.jpg" alt="" loading="lazy" />
                                     </div>
                                 </div>
                             </div>
@@ -121,7 +215,7 @@ const Project = () => {
                                         <a href="project-detail.html" className="icon"><i className="flaticon-arrow-up"></i></a>
                                     </div>
                                     <div className="image">
-                                        <img src="assets/images/gallery/5.jpg" alt="" />
+                                        <img src="assets/images/gallery/5.jpg" alt="" loading="lazy" />
                                     </div>
                                 </div>
                             </div>
@@ -136,7 +230,7 @@ const Project = () => {
                                         <a href="project-detail.html" className="icon"><i className="flaticon-arrow-up"></i></a>
                                     </div>
                                     <div className="image">
-                                        <img src="assets/images/gallery/4.jpg" alt="" />
+                                        <img src="assets/images/gallery/4.jpg" alt="" loading="lazy" />
                                     </div>
                                 </div>
                             </div>

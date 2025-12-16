@@ -9,7 +9,7 @@ const About = () => {
 
                     {/* Column */}
                     <div className="column col-xl-7 col-lg-12 col-md-12 col-sm-12">
-                        <div className="about-one_rotate-title">APRA BUILDING</div>
+                        <div className="about-one_rotate-title">APRA HOME'S</div>
                         <div className="about-one_content">
                             <div className="sec-title">
                                 <div className="sec-title_title">About Us</div>
@@ -37,7 +37,7 @@ const About = () => {
                                         <div className="count-box"><span className="count-text" data-speed="3000" data-stop="400">0</span>+</div>
                                     </div>
                                     <strong>Completed Projects</strong>
-                                    <div className="counter-block_one-text">Homes Successfully Built</div>
+                                    <div className="counter-block_one-text">Homes Successfully Build</div>
 
                                 </div>
 

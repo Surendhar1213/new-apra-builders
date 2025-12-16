@@ -35,22 +35,9 @@ const Header = () => {
                                                 <li className=" has-mega-menu"><a href="#">Home</a>
                                                 </li>
                                                 <li className=""><a href="#">About us</a></li>
-
                                                 <li className=""><a href="#">Services</a></li>
-
-
                                                 <li className=""><a href="#">project</a></li>
-
-
-                                                {/* <li className=""><a href="#">shop</a>	</li>
-
-
-                                                <li className=""><a href="#">Blog</a></li>
- */}
-
-                                                <li className=""><a href="#">Contact us</a></li>
-
-
+                                              <li className=""><a href="#">Contact us</a></li>
                                             </ul>
                                         </div>
                                     </nav>

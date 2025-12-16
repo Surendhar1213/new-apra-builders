@@ -67,15 +67,7 @@
     background-color: var(--color-two);
 }
 
-.features-one:before {
-    position: absolute;
-    content: '';
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
-    height: 365px;
-    background-color: #f6f8fb;
-}
+/* .features-one:before removed to eliminate background color */
 
 .features-one .swiper-container {
     position: relative;
@@ -157,7 +149,10 @@
     position: relative;
     padding: 16px 30px 8px;
     display: inline-block;
-    background-color: var(--main-color);
+    background-color: transparent;
+    /* specific request to remove var(--main-color) */
+    /* If transparent, maybe icon needs to be white/visible */
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .feature-block_one-icon li {
@@ -197,6 +192,7 @@
     margin-top: 15px;
     margin-bottom: 20px;
     color: var(--main-color);
+    /* Kept text color, removed background context */
     font-family: "Barlow Condensed", sans-serif;
 }
 
@@ -216,7 +212,8 @@
     line-height: 50px;
     text-align: center;
     color: var(--white-color);
-    background-color: var(--main-color);
+    background-color: transparent;
+    /* Removed background color */
     font-family: "flaticon_roisk-flat";
 }
 

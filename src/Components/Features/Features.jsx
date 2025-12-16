@@ -16,14 +16,17 @@ const Features = () => {
                 console.log('Initializing Features Swiper (v6)');
                 try {
                     sliderInstance.current = new window.Swiper(swiperRef.current, {
-                        slidesPerView: 2, // Modified for "half image" look
+                        slidesPerView: 2,
                         centeredSlides: true,
                         spaceBetween: 30,
                         loop: true,
                         speed: 1000,
+                        observer: true, // Important for React
+                        observeParents: true,
                         autoplay: {
-                            delay: 3000,
+                            delay: 2500, // 2-3 seconds as requested
                             disableOnInteraction: false,
+                            pauseOnMouseEnter: false, // Continue moving even on hover "atheyy pola move aakanum"
                         },
                         navigation: {
                             nextEl: '.features-carousel-next',
@@ -31,8 +34,8 @@ const Features = () => {
                         },
                         breakpoints: {
                             0: { slidesPerView: 1 },
-                            768: { slidesPerView: 1.5, centeredSlides: true }, // Partial visibility on tablets
-                            1200: { slidesPerView: 2, centeredSlides: true } // Desired layout on desktop
+                            768: { slidesPerView: 1.5, centeredSlides: true },
+                            1200: { slidesPerView: 2, centeredSlides: true }
                         },
                     });
                 } catch (error) {
@@ -75,7 +78,7 @@ const Features = () => {
 
     return (
         <section className="features-one">
-            <div className="features-one_bg" style={{ backgroundImage: 'url(assets/images/background/feature-bg.jpg)' }}></div>
+            {/* Background removed as requested */}
             <div className="auto-container">
 
                 <div className="sec-title title-anim centered">
@@ -91,7 +94,7 @@ const Features = () => {
                             <div className="feature-block_one">
                                 <div className="feature-block_one-inner">
                                     <div className="feature-block_one-image">
-                                        <img className="trans-500" src="assets/images/resource/about-context-1.jpg" alt="Building Construction" />
+                                        <img className="trans-500" src="assets/images/resource/about-context-1.jpg" alt="Building Construction" loading="lazy" />
                                         <div className="feature-block_one-content trans-500">
                                             <ul className="feature-block_one-icon">
                                                 <li className="flaticon-residential"></li>
@@ -110,7 +113,7 @@ const Features = () => {
                             <div className="feature-block_one">
                                 <div className="feature-block_one-inner">
                                     <div className="feature-block_one-image">
-                                        <img className="trans-500" src="assets/images/resource/about-context-2.jpg" alt="Home Interior" />
+                                        <img className="trans-500" src="assets/images/resource/about-context-2.jpg" alt="Home Interior" loading="lazy" />
                                         <div className="feature-block_one-content trans-500">
                                             <ul className="feature-block_one-icon">
                                                 <li className="flaticon-lobby"></li>
@@ -129,7 +132,7 @@ const Features = () => {
                             <div className="feature-block_one">
                                 <div className="feature-block_one-inner">
                                     <div className="feature-block_one-image">
-                                        <img className="trans-500" src="assets/images/resource/project-1.jpg" alt="Renovation" />
+                                        <img className="trans-500" src="assets/images/resource/project-1.jpg" alt="Renovation" loading="lazy" />
                                         <div className="feature-block_one-content trans-500">
                                             <ul className="feature-block_one-icon">
                                                 <li className="flaticon-residential"></li>
@@ -148,7 +151,7 @@ const Features = () => {
                             <div className="feature-block_one">
                                 <div className="feature-block_one-inner">
                                     <div className="feature-block_one-image">
-                                        <img className="trans-500" src="assets/images/resource/service-1.jpg" alt="Modern Kitchen" />
+                                        <img className="trans-500" src="assets/images/resource/service-1.jpg" alt="Modern Kitchen" loading="lazy" />
                                         <div className="feature-block_one-content trans-500">
                                             <ul className="feature-block_one-icon">
                                                 <li className="flaticon-cutlery"></li>
@@ -167,7 +170,7 @@ const Features = () => {
                             <div className="feature-block_one">
                                 <div className="feature-block_one-inner">
                                     <div className="feature-block_one-image">
-                                        <img className="trans-500" src="assets/images/resource/service-2.jpg" alt="Modern Villa" />
+                                        <img className="trans-500" src="assets/images/resource/service-2.jpg" alt="Modern Villa" loading="lazy" />
                                         <div className="feature-block_one-content trans-500">
                                             <ul className="feature-block_one-icon">
                                                 <li className="flaticon-residential"></li>

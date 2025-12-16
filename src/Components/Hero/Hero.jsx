@@ -181,7 +181,7 @@ const Hero = () => {
                             {/* Content Column */}
                             <div className="slider-one_content">
                                 <div className="slider-one_content-inner">
-                                    <div className="slider-one_title trans-900">APRA BUILDERS</div>
+                                    <div className="slider-one_title trans-900">APRA HOME</div>
                                     <h1 className="slider-one_heading trans-900">Building Your Dream Reality</h1>
                                     <div className="slider-one_text trans-900">
                                         From foundation to finish, we deliver high-quality construction with precision, modern techniques, and unwavering durable materials.
@@ -231,7 +231,7 @@ const Hero = () => {
 
                     {/* Slide 3: Interior */}
                     <div className="swiper-slide">
-                        <div className="slider-one_big-title"><span className="up-down_animation">Interior</span></div>
+                        <div className="slider-one_big-title"><span className="up-down_animation">APRA HOME</span></div>
                         <div className="slider-one_image-layer" style={{ backgroundImage: 'url(/assets/images/main-slider/hero-interior.jpg)' }}></div>
                         <div className="auto-container">
                             {/* Content Column */}

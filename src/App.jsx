@@ -10,10 +10,10 @@ import About from './Components/About/About'
 import Services from './Components/Services/Services'
 import Features from './Components/Features/Features'
 import Rooms from './Components/Rooms/Rooms'
-// import Project from './Components/Project/Project'
-// import Team from './Components/Team/Team'
+import Project from './Components/Project/Project'
+import Team from './Components/Team/Team'
 // import Video from './Components/Video/Video'
-// import Testimonial from './Components/Testimonial/Testimonial'
+import Testimonial from './Components/Testimonial/Testimonial'
 // import News from './Components/News/News'
 import CTA from './Components/CTA/CTA'
 import Footer from './Components/Footer/Footer'
@@ -51,10 +51,10 @@ function App() {
       <Services />
       <Features />
       <Rooms />
-      {/* <Project /> */}
-      {/* <Team /> */}
+      <Project />
+      <Team />
       {/* <Video /> */}
-      {/* <Testimonial /> */}
+      <Testimonial />
       {/* <News /> */}
       <CTA />
       <Footer />

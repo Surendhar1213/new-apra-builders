@@ -9,7 +9,7 @@ const Rooms = () => {
                     {/* Image Column */}
                     <div className="rooms-one_image-column col-lg-6 col-md-12 col-sm-12">
                         <div className="rooms-one_image">
-                            <img src="assets/images/resource/room-1.jpg" alt="Premium Home Construction" />
+                            <img src="assets/images/resource/room-1.jpg" alt="Premium Home Construction" loading="lazy" />
                             <div className="rooms-one_pattern" style={{ backgroundImage: 'url(assets/images/background/pattern-2.png)' }}></div>
                         </div>
 
