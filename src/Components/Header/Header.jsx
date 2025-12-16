@@ -2,6 +2,8 @@ import React from 'react';
 import MobileMenu from '../MobileMenu/MobileMenu';
 import './Header.css';
 
+import editLogo1 from '../../assets/Myimages/edit-logo-1.png';
+
 const Header = () => {
     return (
         <header className="main-header header-style-one">
@@ -14,7 +16,7 @@ const Header = () => {
 
                             {/* Logo Box */}
                             <div className="logo-box">
-                                <div className="logo"><a href="/"><img src="/assets/images/logo.png" alt="" title="APRA HOME" /></a></div>
+                                <div className="logo"><a href="/"><img src={editLogo1} alt="" title="APRA HOME" /></a></div>
                             </div>
 
                             <div className="header-navbar d-flex justify-content-between align-items-center">
@@ -37,7 +39,7 @@ const Header = () => {
                                                 <li className=""><a href="#">About us</a></li>
                                                 <li className=""><a href="#">Services</a></li>
                                                 <li className=""><a href="#">project</a></li>
-                                              <li className=""><a href="#">Contact us</a></li>
+                                                <li className=""><a href="#">Contact us</a></li>
                                             </ul>
                                         </div>
                                     </nav>

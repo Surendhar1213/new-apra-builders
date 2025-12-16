@@ -210,7 +210,7 @@ const Hero = () => {
                             {/* Content Column */}
                             <div className="slider-one_content">
                                 <div className="slider-one_content-inner">
-                                    <div className="slider-one_title trans-900">Modern Living</div>
+                                    <div className="slider-one_title trans-900">Apra Homes</div>
                                     <h1 className="slider-one_heading trans-900">Architectural Masterpiece</h1>
                                     <div className="slider-one_text trans-900">Experience the pinnacle of modern living with our award-winning architectural designs and sustainable home solutions.</div>
                                     <div className="slider-one_button trans-900 d-flex align-items-center flex-wrap">
@@ -237,7 +237,7 @@ const Hero = () => {
                             {/* Content Column */}
                             <div className="slider-one_content">
                                 <div className="slider-one_content-inner">
-                                    <div className="slider-one_title trans-900">Elegant Interiors</div>
+                                    <div className="slider-one_title trans-900">APRA HOMES</div>
                                     <h1 className="slider-one_heading trans-900">Designed for Comfort & Style</h1>
                                     <div className="slider-one_text trans-900">Transform your living space with our bespoke interior design services, blending comfort with contemporary elegance.</div>
                                     <div className="slider-one_button trans-900 d-flex align-items-center flex-wrap">

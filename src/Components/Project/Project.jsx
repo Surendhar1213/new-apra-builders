@@ -101,8 +101,8 @@ const Project = () => {
             <div className="auto-container">
 
                 <div className="sec-title title-anim centered">
-                    <div className="sec-title_title">OUR HOTEL GALLERY</div>
-                    <h2 className="sec-title_heading text_invert">Art Best Hotel Gallery</h2>
+                    <div className="sec-title_title">OUR PROJECTS</div>
+                    <h2 className="sec-title_heading text_invert">Premiere Construction <br /> & Interior Gallery</h2>
                 </div>
 
                 <div className="case-one__slider-inner">
@@ -113,13 +113,13 @@ const Project = () => {
                                 <div className="project-block_one">
                                     <div className="content">
                                         <div className="title-info">
-                                            <p className="sub-title">Hoteling / Vocations</p>
-                                            <h3 className="title">Buffet Facility</h3>
+                                            <p className="sub-title">Modern Living</p>
+                                            <h3 className="title">Luxury Villa</h3>
                                         </div>
                                         <a href="project-detail.html" className="icon"><i className="flaticon-arrow-up"></i></a>
                                     </div>
                                     <div className="image">
-                                        <img src="assets/images/gallery/4.jpg" alt="" loading="lazy" />
+                                        <img src="assets/images/gallery/villa.png" alt="Luxury Villa" loading="lazy" />
                                     </div>
                                 </div>
                             </div>
@@ -128,13 +128,13 @@ const Project = () => {
                                 <div className="project-block_one">
                                     <div className="content">
                                         <div className="title-info">
-                                            <p className="sub-title">Hoteling / Vocations</p>
-                                            <h3 className="title">Buffet Facility</h3>
+                                            <p className="sub-title">Interior Design</p>
+                                            <h3 className="title">Modern Kitchen</h3>
                                         </div>
                                         <a href="project-detail.html" className="icon"><i className="flaticon-arrow-up"></i></a>
                                     </div>
                                     <div className="image">
-                                        <img src="assets/images/gallery/5.jpg" alt="" loading="lazy" />
+                                        <img src="assets/images/gallery/kitchen.png" alt="Modern Kitchen" loading="lazy" />
                                     </div>
                                 </div>
                             </div>
@@ -143,13 +143,13 @@ const Project = () => {
                                 <div className="project-block_one">
                                     <div className="content">
                                         <div className="title-info">
-                                            <p className="sub-title">Hoteling / Vocations</p>
-                                            <h3 className="title">Buffet Facility</h3>
+                                            <p className="sub-title">Renovation</p>
+                                            <h3 className="title">Home Makeover</h3>
                                         </div>
                                         <a href="project-detail.html" className="icon"><i className="flaticon-arrow-up"></i></a>
                                     </div>
                                     <div className="image">
-                                        <img src="assets/images/gallery/6.jpg" alt="" loading="lazy" />
+                                        <img src="assets/images/gallery/renovation.png" alt="Home Makeover" loading="lazy" />
                                     </div>
                                 </div>
                             </div>
@@ -158,13 +158,13 @@ const Project = () => {
                                 <div className="project-block_one">
                                     <div className="content">
                                         <div className="title-info">
-                                            <p className="sub-title">Hoteling / Vocations</p>
-                                            <h3 className="title">Buffet Facility</h3>
+                                            <p className="sub-title">Construction</p>
+                                            <h3 className="title">Building Project</h3>
                                         </div>
                                         <a href="project-detail.html" className="icon"><i className="flaticon-arrow-up"></i></a>
                                     </div>
                                     <div className="image">
-                                        <img src="assets/images/gallery/7.jpg" alt="" loading="lazy" />
+                                        <img src="assets/images/gallery/construction.png" alt="Building Project" loading="lazy" />
                                     </div>
                                 </div>
                             </div>
@@ -179,13 +179,13 @@ const Project = () => {
                                 <div className="project-block_one style-2 active">
                                     <div className="content">
                                         <div className="title-info">
-                                            <p className="sub-title">Hoteling / Vocations</p>
-                                            <h3 className="title">Buffet Facility</h3>
+                                            <p className="sub-title">Interior</p>
+                                            <h3 className="title">Luxury Interior</h3>
                                         </div>
                                         <a href="project-detail.html" className="icon"><i className="flaticon-arrow-up"></i></a>
                                     </div>
                                     <div className="image">
-                                        <img src="assets/images/gallery/7.jpg" alt="" loading="lazy" />
+                                        <img src="assets/images/gallery/interior.png" alt="Luxury Interior" loading="lazy" />
                                     </div>
                                 </div>
                             </div>
@@ -194,13 +194,13 @@ const Project = () => {
                                 <div className="project-block_one style-2">
                                     <div className="content">
                                         <div className="title-info">
-                                            <p className="sub-title">Hoteling / Vocations</p>
-                                            <h3 className="title">Buffet Facility</h3>
+                                            <p className="sub-title">Architecture</p>
+                                            <h3 className="title">Villa Design</h3>
                                         </div>
                                         <a href="project-detail.html" className="icon"><i className="flaticon-arrow-up"></i></a>
                                     </div>
                                     <div className="image">
-                                        <img src="assets/images/gallery/6.jpg" alt="" loading="lazy" />
+                                        <img src="assets/images/gallery/villa.png" alt="Villa Design" loading="lazy" />
                                     </div>
                                 </div>
                             </div>
@@ -209,13 +209,13 @@ const Project = () => {
                                 <div className="project-block_one style-2">
                                     <div className="content">
                                         <div className="title-info">
-                                            <p className="sub-title">Hoteling / Vocations</p>
-                                            <h3 className="title">Buffet Facility</h3>
+                                            <p className="sub-title">Kitchen</p>
+                                            <h3 className="title">Modular Setup</h3>
                                         </div>
                                         <a href="project-detail.html" className="icon"><i className="flaticon-arrow-up"></i></a>
                                     </div>
                                     <div className="image">
-                                        <img src="assets/images/gallery/5.jpg" alt="" loading="lazy" />
+                                        <img src="assets/images/gallery/kitchen.png" alt="Modular Setup" loading="lazy" />
                                     </div>
                                 </div>
                             </div>
@@ -224,13 +224,13 @@ const Project = () => {
                                 <div className="project-block_one style-2">
                                     <div className="content">
                                         <div className="title-info">
-                                            <p className="sub-title">Hoteling / Vocations</p>
-                                            <h3 className="title">Buffet Facility</h3>
+                                            <p className="sub-title">Renovation</p>
+                                            <h3 className="title">Full Renovation</h3>
                                         </div>
                                         <a href="project-detail.html" className="icon"><i className="flaticon-arrow-up"></i></a>
                                     </div>
                                     <div className="image">
-                                        <img src="assets/images/gallery/4.jpg" alt="" loading="lazy" />
+                                        <img src="assets/images/gallery/renovation.png" alt="Full Renovation" loading="lazy" />
                                     </div>
                                 </div>
                             </div>

@@ -84,8 +84,8 @@ const Team = () => {
             <div className="auto-container">
 
                 <div className="sec-title title-anim centered">
-                    <div className="sec-title_title">OUR Expert Team</div>
-                    <h2 className="sec-title_heading text_invert">Our Motivated <br /> Hotel Staff</h2>
+                    <div className="sec-title_title">OUR CURRENT PROJECT</div>
+                    <h2 className="sec-title_heading text_invert"> Our Ongoing <br /> Construction Project</h2>
                 </div>
 
                 <div className="team-carousel swiper-container" ref={swiperRef}>
@@ -96,22 +96,21 @@ const Team = () => {
                                 <div className="team-block_one-inner">
                                     <div className="team-block_one-plus trans-300 flaticon-plus"></div>
                                     <div className="team-block_one-image">
-                                        <img src="assets/images/resource/team-1.jpg" alt="" loading="lazy" />
+                                        <img
+                                            src="assets/images/resource/project-1.jpg"
+                                            alt="Foundation Phase"
+                                            loading="lazy"
+                                            style={{ width: "430px", height: "527px", objectFit: "cover" }}
+                                        />
                                         <div className="team-block_one-content trans-900">
-                                            <h3 className="team-block_one-title">Iliena Brown</h3>
-                                            <div className="team-block_one-designation">BUILDING MANAGER</div>
+                                            <h3 className="team-block_one-title">Foundation Phase</h3>
+                                            <div className="team-block_one-designation">SITE PREPARATION</div>
                                         </div>
                                         <div className="team-block_one-overlay overlay-layer">
-                                            <h3 className="team-block_one-title"><a href="team-detail.html">Iliena Brown</a></h3>
-                                            <div className="team-block_one-designation">BUILDING MANAGER</div>
-                                            <div className="team-social_box">
-                                                <a href="https://facebook.com/"><i className="fa-brands fa-facebook-f"></i></a>
-                                                <a href="https://x.com/"><i className="fa-brands fa-x-twitter"></i></a>
-                                                <a href="https://youtube.com/"><i className="fa-brands fa-youtube"></i></a>
-                                                <a href="https://instagram.com/"><i className="fa-brands fa-instagram"></i></a>
-                                            </div>
-                                            <div className="team-block_one-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</div>
-                                            <a className="team-block_one-more" href="team-detail.html">Read More <span className="fa-classic fa-solid fa-angles-right"></span></a>
+                                            <h3 className="team-block_one-title"><a href="project-detail.html">Foundation Phase</a></h3>
+                                            <div className="team-block_one-designation">SITE PREPARATION</div>
+                                            <div className="team-block_one-text">Laying the groundwork for a solid structure with precision engineering and high-quality materials.</div>
+                                            <a className="team-block_one-more" href="project-detail.html">Read More <span className="fa-classic fa-solid fa-angles-right"></span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -123,22 +122,21 @@ const Team = () => {
                                 <div className="team-block_one-inner">
                                     <div className="team-block_one-plus trans-300 flaticon-plus"></div>
                                     <div className="team-block_one-image">
-                                        <img src="assets/images/resource/team-2.jpg" alt="" loading="lazy" />
+                                        <img
+                                            src="assets/images/resource/about-context-1.jpg"
+                                            alt="Interior Finishing"
+                                            loading="lazy"
+                                            style={{ width: "430px", height: "527px", objectFit: "cover" }}
+                                        />
                                         <div className="team-block_one-content trans-900">
-                                            <h3 className="team-block_one-title">Danial Frankie</h3>
-                                            <div className="team-block_one-designation">CEO & FOUNDER</div>
+                                            <h3 className="team-block_one-title">Interior Finishing</h3>
+                                            <div className="team-block_one-designation">LUXURY DESIGN</div>
                                         </div>
                                         <div className="team-block_one-overlay overlay-layer">
-                                            <h3 className="team-block_one-title"><a href="team-detail.html">Danial Frankie</a></h3>
-                                            <div className="team-block_one-designation">CEO & FOUNDER</div>
-                                            <div className="team-social_box">
-                                                <a href="https://facebook.com/"><i className="fa-brands fa-facebook-f"></i></a>
-                                                <a href="https://x.com/"><i className="fa-brands fa-x-twitter"></i></a>
-                                                <a href="https://youtube.com/"><i className="fa-brands fa-youtube"></i></a>
-                                                <a href="https://instagram.com/"><i className="fa-brands fa-instagram"></i></a>
-                                            </div>
-                                            <div className="team-block_one-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</div>
-                                            <a className="team-block_one-more" href="team-detail.html">Read More <span className="fa-classic fa-solid fa-angles-right"></span></a>
+                                            <h3 className="team-block_one-title"><a href="project-detail.html">Interior Finishing</a></h3>
+                                            <div className="team-block_one-designation">LUXURY DESIGN</div>
+                                            <div className="team-block_one-text">Focusing on the finer details, ensuring every corner meets our high standards of luxury and design.</div>
+                                            <a className="team-block_one-more" href="project-detail.html">Read More <span className="fa-classic fa-solid fa-angles-right"></span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -150,22 +148,21 @@ const Team = () => {
                                 <div className="team-block_one-inner">
                                     <div className="team-block_one-plus trans-300 flaticon-plus"></div>
                                     <div className="team-block_one-image">
-                                        <img src="assets/images/resource/team-3.jpg" alt="" loading="lazy" />
+                                        <img
+                                            src="assets/images/resource/about-context-2.jpg"
+                                            alt="Structural Frame"
+                                            loading="lazy"
+                                            style={{ width: "430px", height: "527px", objectFit: "cover" }}
+                                        />
                                         <div className="team-block_one-content trans-900">
-                                            <h3 className="team-block_one-title">Micheal Baker</h3>
-                                            <div className="team-block_one-designation">GENERAL MANAGER</div>
+                                            <h3 className="team-block_one-title">Structural Frame</h3>
+                                            <div className="team-block_one-designation">CONSTRUCTION</div>
                                         </div>
                                         <div className="team-block_one-overlay overlay-layer">
-                                            <h3 className="team-block_one-title"><a href="team-detail.html">Micheal Baker</a></h3>
-                                            <div className="team-block_one-designation">GENERAL MANAGER</div>
-                                            <div className="team-social_box">
-                                                <a href="https://facebook.com/"><i className="fa-brands fa-facebook-f"></i></a>
-                                                <a href="https://x.com/"><i className="fa-brands fa-x-twitter"></i></a>
-                                                <a href="https://youtube.com/"><i className="fa-brands fa-youtube"></i></a>
-                                                <a href="https://instagram.com/"><i className="fa-brands fa-instagram"></i></a>
-                                            </div>
-                                            <div className="team-block_one-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</div>
-                                            <a className="team-block_one-more" href="team-detail.html">Read More <span className="fa-classic fa-solid fa-angles-right"></span></a>
+                                            <h3 className="team-block_one-title"><a href="project-detail.html">Structural Frame</a></h3>
+                                            <div className="team-block_one-designation">CONSTRUCTION</div>
+                                            <div className="team-block_one-text">Building the core framework that defines the durability and safety of the modern home.</div>
+                                            <a className="team-block_one-more" href="project-detail.html">Read More <span className="fa-classic fa-solid fa-angles-right"></span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -182,7 +179,7 @@ const Team = () => {
                 </div>
 
                 <div className="lower-box text-center">
-                    <div className="lower-text">More of our <a href="team.html">Team member</a></div>
+                    <div className="lower-text">View all <a href="projects.html">Ongoing Projects</a></div>
                 </div>
 
             </div>
