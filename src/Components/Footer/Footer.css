@@ -1,0 +1,278 @@
+/* Main Footer */
+.main-footer {
+    position: relative;
+    background-color: #006363;
+    /* Deep Teal Base */
+    background-image: url('https://www.transparenttextures.com/patterns/concrete-wall.png');
+    color: #e0f7f7;
+    padding-top: 90px;
+    font-size: 15px;
+    font-family: 'DM Sans', sans-serif;
+    overflow: hidden;
+}
+
+.main-footer a {
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+.main-footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.widgets-section {
+    padding-bottom: 40px;
+}
+
+.footer-column {
+    margin-bottom: 40px;
+}
+
+/* Widget Title */
+.widget-title {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.widget-title-small {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Logo Widget */
+.footer-logo {
+    margin-bottom: 25px;
+}
+
+.footer-logo h3 {
+    font-size: 32px;
+    line-height: 1;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.footer-logo .sub-title {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #a0e0e0;
+    text-transform: uppercase;
+}
+
+.footer-text {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+/* Social Icons */
+.footer-social {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.footer-social a:hover {
+    background: #fff;
+    color: #006363;
+    border-color: #fff;
+    text-decoration: none;
+}
+
+/* Links List */
+.user-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-links li {
+    margin-bottom: 15px;
+}
+
+.user-links li a {
+    font-size: 16px;
+    color: #e0f7f7;
+    display: inline-block;
+}
+
+/* Recent Projects (News Widget Style) */
+.news-widget .news-post {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.news-widget .post-inner {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.news-widget .image {
+    width: 80px;
+    height: 70px;
+    flex-shrink: 0;
+}
+
+.news-widget .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-widget .content {
+    padding-top: 0;
+}
+
+.news-widget .date {
+    font-size: 12px;
+    color: #a0e0e0;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.news-widget h4 {
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0;
+    font-weight: 600;
+}
+
+.news-widget h4 a {
+    color: #fff;
+}
+
+/* --- Infinite Marquee Image Strip --- */
+.footer-image-strip {
+    position: relative;
+    width: 100%;
+    /* Takes width of auto-container */
+    height: 180px;
+    overflow: hidden;
+    background: transparent;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    /* Space before copyright */
+}
+
+.marquee-track {
+    display: flex;
+    width: max-content;
+    height: 100%;
+    animation: marquee 50s linear infinite;
+    /* Slower smooth scroll */
+}
+
+.marquee-track:hover {
+    animation-play-state: paused;
+}
+
+.footer-image-strip .image-item {
+    width: 280px;
+    height: 100%;
+    flex-shrink: 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-image-strip .image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+    display: block;
+}
+
+.footer-image-strip .image-item:hover img {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* Footer Bottom */
+.footer-bottom {
+    background-color: #004d4d;
+    /* Darker shade */
+    padding: 25px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-bottom .inner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-bottom .copyright-text {
+    color: #fff;
+}
+
+.footer-bottom .footer-nav ul {
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-bottom .footer-nav a {
+    color: #e0f7f7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-image-strip {
+        height: 150px;
+        margin-bottom: 40px;
+    }
+
+    .footer-image-strip .image-item {
+        width: 200px;
+    }
+
+    .footer-bottom .inner-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-bottom .footer-nav ul {
+        justify-content: center;
+    }
+}
